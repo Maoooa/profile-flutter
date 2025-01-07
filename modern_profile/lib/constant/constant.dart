@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 const bgPrimaryColor = Colors.black;
 const bgSecendaryColor = Color.fromARGB(255, 148, 148, 148);
+const bgYellow =Colors.amber;
 
 const textPrimaryColor = Colors.white;
 const textSecondaryColor = Colors.black;
@@ -21,8 +22,13 @@ final textSubTitle = GoogleFonts.poppins(
   fontWeight: FontWeight.w400,
   color: textGrayColor,
 );
+final textMenu = GoogleFonts.poppins(
+  fontSize: 16,
+  fontWeight: FontWeight.w400,
+  color: textGrayColor,
+);
 final textBtn = GoogleFonts.poppins(
   fontSize: 18,
   fontWeight: FontWeight.w500,
-  color: textPrimaryColor,
+  color: textSecondaryColor,
 );

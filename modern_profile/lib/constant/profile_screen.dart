@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modern_profile/components/profile_image.dart';
+import 'package:modern_profile/components/profile_menu.dart';
 import 'package:modern_profile/constant/constant.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -28,8 +29,21 @@ class ProfileScreen extends StatelessWidget {
             child: Center(
               child: Text('Edit Profile',style: textBtn,)
             ),
-            
-          )
+          ),
+
+          //profile menu
+          const SizedBox(height: 30,),
+          ProfileMenu(title: 'Setting',icons: Icons.settings,),
+          const SizedBox(height: 13,),
+          ProfileMenu(title: 'Billing Detail', icons: Icons.wallet),
+          const SizedBox(height: 13,),
+          ProfileMenu(title: 'User Management', icons: Icons.person_2),
+          const SizedBox(height: 13,),
+          ProfileMenu(title: 'Bookmark', icons: Icons.book),
+          const SizedBox(height: 50,),
+          ProfileMenu(title: 'Log out', icons: Icons.logout),
+
+
 
 
         ],
@@ -37,3 +51,4 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
+
